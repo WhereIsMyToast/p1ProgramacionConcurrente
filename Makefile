@@ -7,7 +7,7 @@ CFLAGS := -I$(DIRHEA) -c -Wall
 LDLIBS := -lpthread -lrt
 CC := gcc
 
-all : dirs manager procesador contador test
+all : clean dirs manager procesador contador test
 
 dirs:
 	mkdir -p $(DIROBJ) $(DIREXE)

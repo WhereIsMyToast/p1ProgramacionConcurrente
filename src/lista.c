@@ -65,7 +65,7 @@ void eliminar(TLista *pLista)
   pLista->pPrimero = pLista->pPrimero->pSiguiente;
   free(pAux1->valor);
   free(pAux1);
-}
+} 
 
 void eliminarN(TLista *pLista, int index)
 {
