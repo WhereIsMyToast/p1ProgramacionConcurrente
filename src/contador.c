@@ -1,10 +1,15 @@
+#include <pthread.h>
 #include <stdlib.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <sys/stat.h>
 
 void contar(char *line, int line_number);
 
 int main(int argc, char *argv[])
 {
-  // TODO
+  contar(argv[1], atoi(argv[2]));
 
   return EXIT_SUCCESS;
 }
